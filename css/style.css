@@ -4,9 +4,49 @@
     margin: 0 auto;
     text-align: center;
     background-color: bisque;
+    background: linear-gradient(#020024, #268a31, #2b861b, #16ac8b, #0bbfc3, #00d4ff);
 }
 
 h2{
     font-family: sans-serif;
     color: crimson;
+    animation-name: tituloAnimado;
+    animation-duration: 2s;
+    animation-iteration-count: infinite
 }
+
+
+button{
+    padding: .5rem;
+    margin: 1rem;
+    transform: skew(-5deg);
+    transition: .5s;
+    transform: rotateZ(90deg) rotateX(90deg) rotateX(-90deg);
+    width: fit-content;
+
+}
+
+
+@keyframes tituloAnimado {
+    0% {
+        background-color: #4f52db;
+    }
+
+    25% {
+        background-color: blueviolet;
+    }
+
+    50% {
+        background-color: crimson;
+    }
+
+    75% {
+        background-color: chocolate;
+    }
+
+    100% {
+        background-color: darkorange;
+    }
+}
+
+
